@@ -26,7 +26,7 @@ export default function Footer(){
                 <div className="links">
                     <NavLink className="link" to="/">Home</NavLink>
                     <NavLink className="link" to="/residences">Residences</NavLink>
-                    <NavLink className="link" to="/building">Building</NavLink>
+                    <NavLink className="link" to="/amenities">Amenities</NavLink>
                     <NavLink className="link" to="/availabilities">Availabilities</NavLink>
                     <NavLink className="link" to="/neighborhood">Neighborhood</NavLink>
                     <NavLink className="link" to="/contact">Contact</NavLink>
