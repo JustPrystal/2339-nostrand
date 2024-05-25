@@ -57,6 +57,8 @@
 
 .two-column{
     padding: 80px 20px;
+    position: relative;
+    z-index: 1;
 
     .inner{
         max-width: 1440px;

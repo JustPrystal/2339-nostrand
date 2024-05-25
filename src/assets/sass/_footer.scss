@@ -2,6 +2,33 @@ footer{
     background-color: #637698;
     color: #fff;
     padding: 40px;
+    border-top-right-radius: 50px;
+    position: relative;
+    // overflow: hidden;
+    @include responsive(md){
+        border-top-left-radius: 50px;
+    }
+    &::after{
+        position: absolute;
+        content: "";
+        inset: 0;
+        background-color: #fff;
+        z-index: -1;
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        width: 500px;
+        height: 300px;
+        background-color: #fff;
+        top: -200px;
+        left: -200px;
+        transform: rotate(-39deg);
+
+        @include responsive(md){
+            display: none;
+        }
+    }
     .inner{
         max-width: 1440px;
         margin: 0 auto;
