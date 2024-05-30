@@ -22,7 +22,8 @@ let TwoColumnData = [
       description : "The Studio, 1 Bedroom, and 2 Bedroom Brooklyn apartments for rent at 2339 Nostrand Ave are ready to redefine your lifestyle. Sophisticated interiors and designer fixtures make these living spaces perfect for relaxing, entertaining, and everything in between.",
       image : twoColImage2,
       flexDirection : "row",
-      price: ""
+      price: "",
+      cta: "/availabilities"
   },
   {
       variant : "blue",
@@ -31,7 +32,8 @@ let TwoColumnData = [
       description : "The array of upscale amenities offered at 2339 Nostrand Ave is designed for the modern New Yorker. Consider the onsite coworking space, fitness center, and rooftop terrace an extension of your living space.",
       image : twoColImage1,
       flexDirection : "row-reverse",
-      price: ""
+      price: "",
+      cta: "/amenities"
   },
   {
       variant : "white",
@@ -40,7 +42,8 @@ let TwoColumnData = [
       description : "Flatbush, Brooklyn, is an exciting section of the city that offers dining and entertainment just moments from your front door. Proximity to public transportation, Brooklyn College, and Amersfort Park only enhances the appeal of this building's prime location.",
       image : twoColImage3,
       flexDirection : "row",
-      price: ""
+      price: "",
+      cta: "/neighborhood"
   },
 ]
 export default function Home() {

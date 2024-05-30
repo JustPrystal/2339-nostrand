@@ -32,6 +32,9 @@
             .price{
                 color: #fff !important;
             }
+            .cta{
+                color: #fff !important;
+            }
         }
     }
 }
@@ -46,6 +49,9 @@
             text-align: right;
         }
         .price{
+            text-align: right;
+        }
+        .cta{
             text-align: right;
         }
     }
@@ -119,6 +125,25 @@
                 font-weight: normal;
                 font-style: normal;
                 margin-top: 26px;
+
+                @media(max-width:991px){
+                    font-size: 24px;   
+                }
+                @media(max-width:767px){
+                    font-size: 26px;   
+                    text-align: center;
+                }
+            }
+            .cta{
+                color: #92514d;
+                font-size: 28px;
+                font-family: 'Cako';
+                font-weight: normal;
+                font-style: normal;
+                margin-top: 26px;
+                &:hover{
+                    text-decoration: underline;
+                }
 
                 @media(max-width:991px){
                     font-size: 24px;   

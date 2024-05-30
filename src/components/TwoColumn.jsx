@@ -1,4 +1,9 @@
+import { Link } from "react-router-dom";
+
 const TwoColumn = ({data}) => {
+    const scrollUp = ()=>{
+        window.scrollTo({ top: 0});
+    }
     const {
         variant,
         heading,
@@ -6,7 +11,8 @@ const TwoColumn = ({data}) => {
         description,
         image,
         flexDirection,
-        price
+        price,
+        cta
     } = data;
     return (
         <>
@@ -28,6 +34,12 @@ const TwoColumn = ({data}) => {
                              price && <p class="price">
                                 Starting at ${price}
                             </p>
+                        }
+                        {
+                             
+                             cta && <Link class="cta" to={cta} onClick={scrollUp}>
+                                Learn More
+                            </Link>
                         }
                     </div>
                     <div class="image-wrap">

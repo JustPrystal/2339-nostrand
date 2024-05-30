@@ -1,6 +1,6 @@
 import Table from '../components/Table';
 import Banner from "../components/Banner";
-import BannerImage from "../assets/images/Neighborhood/banner3.jpg";
+import BannerImage from "../assets/images/Availabilities/banner4.jpg";
 
 const Availabilities = () => {
     let TableData = [

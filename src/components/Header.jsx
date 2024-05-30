@@ -41,7 +41,10 @@ const links = [
 const Header = () => {
   const [headerToggle, setHeaderToggle] = useState('false');
   const [headerClasses, setHeaderClasses] = useState([])
-
+  
+  const reload = () => {
+    setHeaderClasses(headerClasses.filter(className => className !== 'close'));
+  }
   const handleToggle = ()=>{
     setHeaderToggle(headerToggle?false:true)
     if(headerToggle){
@@ -92,7 +95,8 @@ const Header = () => {
                         return(
                           <NavLink className={({ isActive }) =>( isActive ? "link active" : "link")} 
                             to={link.link} 
-                            key={childIndex}>
+                            key={childIndex}
+                            onClick={reload}>
                             {link.linkText}
                           </NavLink>
                         )

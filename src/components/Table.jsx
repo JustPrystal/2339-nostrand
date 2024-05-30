@@ -6,14 +6,12 @@ const Table = ({ data }) => {
     link: "",
     show: false,
   });
-  const [isLoading, setIsLoading] = useState(false);
 
   const handleClickOnFloorPlan = (link) => {
     setShowFloorPlan({
       link: link,
       show: true,
     });
-    setIsLoading(true); // Set loading state to true when showing the modal
   };
 
   const closeModal = () => {
@@ -21,7 +19,6 @@ const Table = ({ data }) => {
       link: "",
       show: false,
     });
-    setIsLoading(false); // Reset loading state
   };
 
 

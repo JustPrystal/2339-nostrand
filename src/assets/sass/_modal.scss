@@ -65,4 +65,106 @@
     }
   }
   
-  
+  .modal{
+    background-color: rgba($color: #000000, $alpha: 0.6);
+    padding: 100px 40px;
+    position: fixed;
+    inset: 0;
+    overflow: auto;
+    z-index: 999;
+
+    @include responsive(sm){
+        padding: 100px 10px;
+    }
+
+    .wrap{
+        max-width: 700px;
+        margin: 0px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        svg{
+            position: absolute;
+            top: 0px;
+            right: 20px;
+            width: 25px;
+            cursor: pointer;
+
+            @include responsive(xs){
+                right: 10px;
+            }
+        }
+        .content-wrap{
+            background-color: #637698;
+            padding: 30px;
+            text-align: center;
+            
+            h2{
+                color: #f4e9d7;
+                font-size: 46px;
+                font-family: 'cako';
+                font-weight: 500;
+                margin-bottom: 20px;
+
+                @include responsive(md){
+                    font-size: 35px;
+                }
+                @include responsive(xs){
+                    font-size: 28px;
+                }
+            }
+            p{
+                line-height: 150%;
+                font-size: 14px;
+                margin-bottom: 20px;
+                font-weight: 200;
+                text-align: center;
+                color: #fff;
+                font-family: 'super gothic';
+
+                @include responsive(xs){
+                    font-size: 14px;
+                }
+
+                a{
+                    display: inline-block;
+                    text-decoration: none;
+                    color: #f4e9d7;
+                    margin-top: 10px;
+                    transition: all 0.3s ease-in-out;
+
+                    &:hover{
+                        text-decoration: underline;
+                        text-decoration-color: #f4e9d7;
+                    }
+                }
+            }
+            ul{
+                padding-left: 30px;
+                margin-bottom: 20px;
+
+                li{    
+                    color: #fff;
+                    line-height: 150%;
+                    font-weight: 200;
+                    font-size: 14px;
+                    font-family: 'super gothic';
+                }
+            }
+
+        }
+    }
+}
+.extra-links{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    p{
+        cursor: pointer;
+        user-select: none;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
