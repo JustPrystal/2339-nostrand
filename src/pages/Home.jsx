@@ -7,6 +7,7 @@ import TwoColumn from "../components/TwoColumn";
 import twoColImage1 from "../assets/images/Home/Group 2.png";
 import twoColImage2 from "../assets/images/Home/Group 3.png";
 import twoColImage3 from "../assets/images/Home/Group 4.png";
+import { Helmet } from "react-helmet";
 
 let BannerData = {
   backgroundImage : BannerImage,
@@ -48,13 +49,17 @@ let TwoColumnData = [
 ]
 export default function Home() {
   return (
-    <div>
+    <>
+      <Helmet>
+        <title>2339 Nostrand Ave | Luxury Apartments in Brooklyn</title>
+        <meta name="description" content="2339 Nostrand Avenue offers luxury apartments in historic Flatbush, one of Brooklyn’s most sought after neighborhoods." />
+      </Helmet>
       <Banner data={BannerData}/>
       {
           TwoColumnData.map((section, index) => {
               return <TwoColumn key={index} data={section} />
           })
       }
-    </div>
+    </>
   );
 }

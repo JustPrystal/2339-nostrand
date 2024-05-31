@@ -8,6 +8,7 @@ import twoColImage1 from "../assets/images/Neighborhood/Group 10.png";
 import twoColImage2 from "../assets/images/Neighborhood/Group 11.png";
 import twoColImage3 from "../assets/images/Neighborhood/Group 12.png";
 import twoColImage4 from "../assets/images/Neighborhood/Group 13.png";
+import { Helmet } from "react-helmet";
 
 let BannerData = {
   backgroundImage : BannerImage,
@@ -55,13 +56,17 @@ let TwoColumnData = [
 ]
 export default function Home() {
   return (
-    <div>
+    <>
+      <Helmet>
+        <title>2339 Nostrand Avenue | Brooklyn College Apartments </title>
+        <meta name="description" content="Anyone looking for apartments near Brooklyn College and Triangle Square will appreciate 2339 Nostrand Avenue’s unmatched location." />
+      </Helmet>
       <Banner data={BannerData}/>
       {
           TwoColumnData.map((section, index) => {
               return <TwoColumn key={index} data={section} />
           })
       }
-    </div>
+    </>
   );
 }

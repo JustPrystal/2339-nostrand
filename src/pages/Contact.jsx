@@ -1,6 +1,7 @@
 import Form from '../components/Form';
 import Banner from "../components/Banner";
 import BannerImage from "../assets/images/Contact/banner2.jpg";
+import { Helmet } from 'react-helmet';
 
 let BannerData = {
     backgroundImage : BannerImage,
@@ -13,6 +14,10 @@ let BannerData = {
 const Contact = () => {
     return ( 
         <>
+          <Helmet>
+            <title>Contact Us | 2339 Nostrand Avenue in Flatbush, Brooklyn</title>
+            <meta name="description" content="Find yourself in Flatbush, Brooklyn. Contact us for more information about renting an apartment at 2339 Nostrand Avenue in Flatbush, Brooklyn." />
+          </Helmet>
           <Banner data={BannerData} />
           <Form />  
         </>
