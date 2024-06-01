@@ -1,0 +1,95 @@
+.maplegend{
+    background-color: #fff;
+    padding: 72px 40px;
+    position: relative;
+    z-index: 1;
+    @include responsive(md){
+        padding: 72px 20px;                       
+    }
+
+    .inner{
+        max-width: 1440px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        gap: 30px;
+
+        @include responsive(md){
+            gap: 20px;                       
+        }
+        @include responsive(sm){
+            flex-direction: column;
+        }
+
+        .content-wrap{
+            padding: 35px;
+            width: 50%;
+            // text-align: center;
+            border-radius: 50px;
+            display: flex;
+            flex-direction: column;
+            &:nth-child(1){
+                background-color: #637698;
+            }
+            &:nth-child(2){
+                background-color: #935350;
+            }
+            &:nth-child(3){
+                background-color: #838c3b;
+            }
+
+            @include responsive(md){
+                padding: 35px 20px;                    
+            }
+            @include responsive(sm){
+                width: 100%;
+                border-radius: 30px;
+                padding: 20px;
+            }
+
+            .heading{
+                margin-bottom: 40px;
+                h2{
+                    color: #fff;
+                    font-size: 34px;
+                    font-weight: 600;
+                    font-family: 'cako';
+                    text-align: center;
+                    @include responsive(lg){
+                        font-size: 44px;
+                    }
+                    @include responsive(md){
+                        font-size: 35px;
+                    }   
+                    @include responsive(sm){
+                        font-size: 28px;   
+                    }
+                    @include responsive(xs){
+                        font-size: 26px;   
+                    }    
+                }
+            }
+            .content{
+                .list-item{
+                    font-size: 18px;
+                    cursor: pointer;
+                    font-family: 'super gothic';
+                    color: #FFF;
+                    margin-bottom: 10px;
+                    user-select: none;
+                    &:hover{
+                        color: #F4E9D7;
+                    }
+
+                    @include responsive(sm){
+                        font-size: 16px;   
+                    }
+                    @include responsive(xs){
+                        font-size: 14px;   
+                    } 
+                }
+            }
+        }
+    }
+}
