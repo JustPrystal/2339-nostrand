@@ -59,7 +59,8 @@ export default function Footer(){
                                 <img src={EXRLogo} alt="" />
                             </div>
                         </div>
-                        <p>5920 bay parkway,<br />Mapleton, NY 10801</p>
+                        <a href="https://www.google.com/maps?q=2339+Nostrand+Ave,+Brooklyn,+NY+11210,+USA&ftid=0x89c244ad93161391:0xc376b00294c5f48e" >
+                        2339 Nostrand Ave, <br /> Brooklyn, NY 11210, USA</a>
                     </div>
                     <div className="logo-and-copyright">
                         <Link onClick={scrollUp} to="/"><img src={footerLogo} alt="footer logo" /></Link>
