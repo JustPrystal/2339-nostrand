@@ -12,7 +12,7 @@ import { Helmet } from "react-helmet";
 
 let BannerData = {
   backgroundImage : BannerImage,
-  heading : "Find Yourself in FlatbushR",
+  heading : "Find Yourself in Flatbush",
   subHeading : "",
   description: "Brooklyn's Flatbush neighborhood offers something for absolutely everyone. Located just steps away from Triangle Junction and Brooklyn College, you’re never far from where you want to be. This prime location makes 2339 Nostrand Ave great for anyone looking to find their place in the city."
 }

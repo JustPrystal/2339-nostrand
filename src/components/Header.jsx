@@ -1,20 +1,24 @@
 import headerLogo from '../assets/images/Headerlogo.svg';
 import { useEffect, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 const links = [
   [
     {
       link : "/",
-      linkText : "Home"
+      linkText : "Home",
+      type: "link"
     },
     {
       link : "/residences",
-      linkText : "Residences"
+      linkText : "Residences",
+      type: "link"
     },
     {
       link : "/amenities",
-      linkText : "Amenities"
+      linkText : "Amenities",
+      type: "link"
     }
   ],
   [
@@ -26,15 +30,18 @@ const links = [
   [
     {
       link : "/availabilities",
-      linkText : "Availabilities"
+      linkText : "Availabilities",
+      type: "link"
     },
     {
       link : "/neighborhood",
-      linkText : "Neighborhood"
+      linkText : "Neighborhood",
+      type: "link"
     },
     {
-      link : "/contact",
-      linkText : "Contact"
+      link : "/contact#form",
+      linkText : "Contact",
+      type: "hash"
     }
   ]
 ];
@@ -92,6 +99,18 @@ const Header = () => {
                         )
                       } 
                       else {
+
+                        if(link.type === "hash"){
+                          return (
+                            <HashLink smooth className={"link"}
+                              to={link.link} 
+                              key={childIndex}
+                              onClick={reload}>
+                              {link.linkText}
+                            </HashLink>
+                          )
+                        }
+
                         return(
                           <NavLink className={({ isActive }) =>( isActive ? "link active" : "link")} 
                             to={link.link} 

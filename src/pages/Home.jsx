@@ -24,7 +24,7 @@ let TwoColumnData = [
       image : twoColImage2,
       flexDirection : "row",
       price: "",
-      cta: "/availabilities"
+      cta: "/residences"
   },
   {
       variant : "blue",

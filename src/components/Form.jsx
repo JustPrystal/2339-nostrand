@@ -41,7 +41,7 @@ const Form = () => {
         }
     }
     return (
-        <section className="form-image">
+        <section className="form-image" id="form">
            <div className="inner">
                 <div className="content">
                     <div className="form">

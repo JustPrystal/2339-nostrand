@@ -101,8 +101,8 @@ const Availabilities = () => {
     return ( 
     <>
         <Helmet>
-            <title>Availabilities | 2339 Nostrand Avenue in Flatbush, Brooklyn</title>
-            <meta name="description" content='TEXT HERE' />
+            <title>Availabilities | Find the Apartment You’ve Been Searching For</title>
+            <meta name="description" content='A fresh start awaits you at 2339 Nostrand Ave. From spacious studios to large 2-bedroom units, browse our available listings below to find the luxury Brooklyn apartment that perfectly aligns with your lifestyle.' />
         </Helmet>
         <Banner data={BannerData} />
         <Table data={TableData}/>
