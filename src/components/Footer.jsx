@@ -68,7 +68,7 @@ export default function Footer(){
                             <p className='accessibility' onClick={showModal}>Accessibility</p> |
                             <p className='fair-housing' onClick={showModal}>Fair Housing Notice</p>
                         </div>
-                        <p onClick={showModal}> Copyright Â© 2023 EXR, All rights reserved.</p>
+                        <p> Copyright © 2023 EXR, All rights reserved.</p>
                     </div>
                     <div className="links">
                         <NavLink onClick={scrollUp} className="link" to="/">Home</NavLink>
