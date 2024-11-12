@@ -30,7 +30,6 @@ const MapLegend = ({data, setPoi, setShowPopup, setPoiTitle, setFlyData, flyData
                                                 <p className="list-item" key={itemIndex} 
                                                     onClick={
                                                         () => {
-                                                            console.log("sasa")
                                                             setPoiCoords(listItem.coords);
                                                             setTitle(listItem.place);
                                                             showPopup();

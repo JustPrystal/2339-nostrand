@@ -1,0 +1,102 @@
+.banner{
+    .background-image{
+        position: static;
+        top: 0;
+        width: 100%;
+        height: 80vh;
+        object-fit: cover;
+        z-index: -1;
+        
+        @include responsive(md){
+            position: static;
+            height: 72vh;
+        }
+        @include responsive(sm){
+            height: 68vh;
+        }
+        @include responsive(xs){
+            height: 75vh;
+        }
+        @media(max-height:850px) and (max-width: 567px){
+            height: 60vh
+            ;
+        }
+    }
+    .text-wrap{
+        background-color: #637698;
+        .inner{
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 80px 25px;
+            display: flex;
+            justify-content: center;
+            @include responsive(md){
+                padding: 40px 25px;
+            }
+            .content{
+                text-align: center;
+                padding-bottom: 35px;
+                @include responsive(xs){
+                    max-width: 378px;
+                }
+                .heading{
+                    font-family: 'cako';
+                    font-size: 87px;
+                    line-height: 1.3em;
+                    color: white;
+                    font-weight: 500;
+
+                    @include responsive(md){
+                        font-size: 70px;
+                        padding-bottom: 10px;
+                    }
+                    @include responsive(sm){
+                        font-size: 48px;
+
+                    }
+                }
+                .sub-heading{
+                    color: #fff;
+                    font-size: 30px;
+                    font-family: 'Super Gothic';
+                    font-weight: lighter;
+                    max-width: 920px;
+                    margin: 0 auto;
+                    @include responsive(md){
+                        font-size: 20px;
+                    }
+                }
+                .description{
+                    margin: 0 auto;
+                    margin-top: 24px;
+                    max-width: 920px;
+                    color: #fff;
+                    font-size: 22px;
+                    font-family: 'Super Gothic';
+                    font-weight: lighter;
+                    @include responsive(md){
+                        margin-top: 10px;
+                        font-size: 16px;
+                    }
+                }
+                a{
+                    display: inline-block;
+                    font-size: 16px;
+                    color: #fff;
+                    cursor: pointer;
+                    font-family: "Charlevoix Pro";
+                    border: 1px solid #fff;
+                    text-decoration: none;
+                    padding: 20px 30px;
+                    margin-top: 40px;
+    
+                    &:hover{
+                        transition: 0.3s ease;
+                        color: #F4E9D7;
+                        border-color: #F4E9D7;
+                    }
+                }
+            }
+        }
+    }
+}

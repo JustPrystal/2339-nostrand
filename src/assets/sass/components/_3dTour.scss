@@ -1,0 +1,36 @@
+.background{
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba($color: #000000, $alpha: 0.6);
+    z-index: 1111111111;
+    
+    .inner{
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        .wrapper{
+            position: relative;
+            display: flex;
+            overflow: hidden;
+            .close-btn{
+                width: 30px;
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                background-color: #000000;
+                border: 1px solid white;
+                padding: 5px;
+                border-radius: 50%;
+                cursor: pointer;
+                &:hover{
+                    scale: 1.03;
+                }
+            }
+        }
+  
+    }
+}

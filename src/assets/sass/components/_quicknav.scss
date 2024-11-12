@@ -1,0 +1,88 @@
+.quick{
+    padding: 50px 0;
+    position: relative;
+    z-index: 99;
+    background-color: white;
+    .rotated{
+        transform: rotate(180deg);
+    }
+    .inner{
+        display: flex;
+        padding: 0 40px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        color: #637698;
+        align-items: center;
+        @include responsive(md){
+           flex-direction: row; 
+           padding: 0 20px;
+        }
+        .prev{
+            width: 170px;
+            display: flex;
+            @include responsive(md){
+                order: 2;
+                width: fit-content;
+            }
+            
+            a{
+            color: #637698;
+            font-family: 'Super Gothic';
+            font-size: 18px;
+            display: flex;
+            flex-direction: row-reverse;
+            gap: 10px;
+            @include responsive(sm){
+                font-size: 16px;
+                gap: 5px;
+            }
+            img{
+                width: 25px;
+                height: 100%;
+            }
+            }
+        }
+        .text{
+            font-family: 'cako';
+            font-size: 36px;
+            a{
+                color: #637698;
+            }
+            @include responsive(md){
+                width: 100%;
+                order: 1;
+                text-align: center;
+                margin-bottom: 25px;
+                
+            }
+            @include responsive(sm){
+                font-size: 24px;
+            }
+        }
+        .next{
+            display: flex;
+            justify-content: end;
+            width: 170px;
+            @include responsive(md){
+                order: 3;
+                width: fit-content;
+                
+            }
+            a{
+            color: #637698;
+            font-family: 'Super Gothic';
+            font-size: 18px;
+            display: flex;
+            gap: 10px;
+            @include responsive(sm){
+                font-size: 16px;
+                gap: 5px;
+            }
+            img{
+                width: 25px;
+                height: 100%;
+            }
+        }
+        }
+    }
+}

@@ -74,7 +74,7 @@ const Form = () => {
                                         <option id='PH' value="" disabled selected>Desired layout*</option>
                                         <option value="0">1 Bed</option>
                                         <option value="1">2 Bed</option>
-                                        <option value="2">3 Bed</option>
+                                        {/* <option value="2">3 Bed</option> */}
                                     </select>
                                 </div>
                                 <div className="date-wrap">
@@ -87,6 +87,10 @@ const Form = () => {
                         )
                     }
                     </form>
+                    </div>
+                    <div className="secondary-option">
+                        <h3>Or Call Us At</h3>
+                        <a href="tel:5162120430">(516) 585-2829</a>
                     </div>
                     <div className="link-to-apply">
                         <p className="text" data-aos="fade-left">

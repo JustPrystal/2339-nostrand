@@ -1,0 +1,274 @@
+footer{
+    background-color: #637698;
+    color: #fff;
+    padding: 40px;
+    position: relative;
+    // overflow: hidden;
+    border-top-right-radius: 50px;
+    @include responsive(md){
+        border-top-left-radius: 50px;
+    }
+    &::after{
+        position: absolute;
+        content: "";
+        inset: 0;
+        background-color: #fff;
+        z-index: -1;
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        width: 500px;
+        height: 300px;
+        background-color: #fff;
+        top: -200px;
+        left: -200px;
+        transform: rotate(-39deg);
+
+        @include responsive(md){
+            display: none;
+        }
+    }
+    .inner{
+        max-width: 1440px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        color: #fff;
+        @include responsive(sm){
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+        }
+        .origin-and-address{
+            width: calc(50% - 200px);
+            align-self: flex-end;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            @include responsive(sm){
+                width: 100%;
+                order: 3;
+
+            }
+            .logos-wrap{
+                display: flex;
+                align-items: center;
+                margin-bottom: 8px;
+                @include responsive(md){
+                    margin-bottom: 5px;
+                }
+                @include responsive(sm){
+                    align-self: center;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    margin: 25px 0;
+                }
+                .exr-logo{
+                    width: 80px;
+                    margin-right: 15px;
+                    @include responsive(lg){
+                        width: 70px;
+                    }
+                    @include responsive(md){
+                        width: 50px;
+                        margin-right: 12px;
+                    }
+                    @include responsive(sm){
+                        width: 65px;
+                        margin-right: 12px;
+                    }
+
+                    img{
+                        width: 100%;
+                    }
+                }
+                .house-logo{
+                    width: 70px;
+                    @include responsive(lg){
+                        width: 60px;
+                    }
+                    @include responsive(md){
+                        width: 40px;
+                    }
+                    @include responsive(sm){
+                        width: 50px;
+                    }
+                    img{
+                        width: 100%;
+                    }
+                }
+
+            }
+            .desktop-address{
+                width: 100%;
+                text-align: left;
+                a{
+                    width: 100%;
+
+                }
+                .telephone{
+                    margin-top: 20px;
+
+                }
+                @include responsive(sm) {
+                    display: none;
+                }
+            }
+           
+        }
+        .logo-and-copyright{
+            text-align: center;
+            @include responsive(sm){
+                margin-bottom: 35px;
+            }
+            @include responsive(xs){
+                margin-bottom: 30px;
+            }
+            svg{
+                margin-bottom: 30px;
+                width: 221px;
+                @include responsive(xl){
+                    width: 160px;
+                }
+                @include responsive(md){
+                    width: 120px;
+                    margin-bottom: 25px;
+                }
+                @include responsive(sm){
+                    margin-bottom: 20px;
+                    width: 140px;
+                }
+                @include responsive(xs){
+                    width: 120px;
+                }
+            }
+            .mobile-address{
+                display: none;
+                @include responsive(sm){
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: auto;
+
+                    a{
+                       
+                        font-size: 16px;
+                    }
+                    .telephone{
+                        margin-top: 20px;
+                    }
+                }
+            }
+            .desktop-links{
+                display: flex;
+                flex-direction: column;
+                .inner{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 10px;
+                }
+                @include responsive(sm) {
+                    display: none;
+                }
+            }
+        
+        }
+        .links{
+            width: calc(50% - 200px);
+            align-self: center;
+            text-align: end;
+            @include responsive(sm){
+                width: 100%;
+                order: 2;
+                align-items: center;
+                text-align: center;
+            }
+            .link{
+                display: block;
+                font-size: 25px;
+                margin-bottom: 26px;
+                text-decoration: none;
+                font-family: 'cako';
+                font-weight: 400;
+                color: #ffffff;
+                @include responsive(xl){
+                    margin-bottom: 20px;
+                }
+                @include responsive(lg){
+                    font-size: 22px;
+                }
+                @include responsive(md){
+                    font-size: 18px;
+                    margin-bottom: 15px;
+                }
+                @include responsive(sm){
+                    font-size: 20px;
+                    margin-bottom: 16px;
+                }
+                @include responsive(xs){
+                    font-size: 16px;
+                    margin-bottom: 12px;
+                }
+                &:last-child{
+                    margin-bottom: 0px;
+                }
+            }
+        }
+        .address{
+            a{
+                color: #fff;
+                font-size: 14px;
+                font-weight: 400;
+                order: 2;
+                font-family: 'Super Gothic';
+                @include responsive(md){
+                    font-size: 10px;
+                }
+                @include responsive(sm){
+                    font-size: 12px;
+                }
+                @include responsive(xs){
+                    font-size: 8px;
+                }
+            }
+        }
+        .extra-links{
+            p{
+                font-size: 18px;
+                font-family: 'Super Gothic';
+                font-weight: 400;
+                @include responsive(lg){
+                    font-size: 16px;
+                }
+                @include responsive(md){
+                    font-size: 14px;
+                }
+                @include responsive(sm){
+                    font-size: 16px;
+                }
+                @include responsive(xs){
+                    font-size: 16px;
+                }
+
+            }
+        }
+        .mobile-links{
+            order: 9;
+            display: flex;
+            flex-direction: column;
+            display: none;
+            @include responsive(sm){
+                display: flex;
+            }
+            .inner{
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+
+            }
+        }
+    }
+}

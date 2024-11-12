@@ -1,8 +1,13 @@
 import { useState } from "react";
+import Tour3d from "./Tour3d";
 
 const Table = ({ data }) => {
 
   const [showFloorPlan, setShowFloorPlan] = useState({
+    link: "",
+    show: false,
+  });
+  const [showTour, setShowTour] = useState({
     link: "",
     show: false,
   });
@@ -12,6 +17,12 @@ const Table = ({ data }) => {
       link: link,
       show: true,
     });
+  };
+  const handleClickOnViewTour = (link) => {
+    setShowTour(prevState => ({
+      link: prevState.show ? "" : link, 
+      show: !prevState.show 
+    }));
   };
 
   const closeModal = () => {
@@ -30,6 +41,7 @@ const Table = ({ data }) => {
             <div className="residence cell head">Residence</div>
             <div className="bed-bath cell head">Type</div>
             <div className="price cell head">Price</div>
+            <div className="price cell head">Net Price</div>
             <div className="three-d-tour cell head">3D Tour</div>
             <div className="tour3d cell head">Floor Plans</div>
           </div>
@@ -47,11 +59,24 @@ const Table = ({ data }) => {
                       {row.bedBath}
                     </div>
                     <div className="price cell">
-                      <span className="label mobile">Price</span>${row.price}
+                      <span className="label mobile">Price</span><p>${row.price}</p>
                     </div>
-                    <div className="three-d-tour cell">
+                    <div className="net-price cell">
+                      <span className="label mobile">Net Price</span>${row.netprice}
+                    </div>
+                    <div 
+                      className={
+                      (row.tour3dLink ? "three-d-tour cell view" :  "three-d-tour cell")
+                      } 
+                      onClick={
+                        row.tour3dLink 
+                        ? () => handleClickOnViewTour(row.tour3dLink)
+                        : undefined
+                      }
+                    >
                       <span className="label mobile">3D Tour</span>
-                      {row.tour3d}
+                      {row.tour3dLink ? "View" : "Coming Soon"}                                           
+                      
                     </div>
                     <div
                       className={
@@ -61,7 +86,7 @@ const Table = ({ data }) => {
                         row.floorPlan
                           ? () => handleClickOnFloorPlan(row.floorPlan)
                           : undefined
-                      }
+                      } 
                     >
                       <span className="label mobile">Floor Plan</span>
                       {row.floorPlan ? "View" : "Coming Soon"}
@@ -107,6 +132,7 @@ const Table = ({ data }) => {
           </div>
         </div>
       )}
+      {showTour.show === true && <Tour3d link={showTour.link} close={handleClickOnViewTour} />}
     </>
   );
 };

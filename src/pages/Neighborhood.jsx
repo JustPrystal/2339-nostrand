@@ -5,7 +5,7 @@ import { Helmet } from "react-helmet";
 import { useState } from "react";
 import MapContainer from "../components/Map";
 import MapLegend from '../components/MapLegend';
-
+import QuickNav from "../components/QuickNav";
 
 //2 col images
 
@@ -18,14 +18,24 @@ let BannerData = {
   backgroundImage : BannerImage,
   heading : "Find Yourself in Flatbush",
   subHeading : "",
-  description: "Brooklyn's Flatbush neighborhood offers something for absolutely everyone. Located just steps away from Triangle Junction and Brooklyn College, you’re never far from where you want to be. This prime location makes 2339 Nostrand Ave great for anyone looking to find their place in the city."
+  description: "Brooklyn's Flatbush neighborhood offers something for absolutely everyone. Located just steps away from Triangle Junction and Brooklyn College, you’re never far from where you want to be. This prime location makes 2339 Nostrand   great for anyone looking to find their place in the city."
 }
+const NavData = {
+    prevlink : {
+        text : "Availabilities" ,   
+        prev : "/availabilities#root",
+    },
+    nextlink : {
+        text : "Contact" ,   
+        next : "/contact#root",
+    }
+  }
 let TwoColumnData = [
     {
         variant : "blue",
         heading : "Eateries & Entertainment",
         subheading : "",
-        description : "2339 Nostrand Ave is located just steps from Triangle Junction, a bustling hub that offers familiar names like Target, Starbucks, and other dining staples. When you're looking to venture away from the norm, nearby ethnic eateries, coffee shops, and lounges allow you to step off the beaten path and into established, locals-only hotspots.",
+        description : "2339 Nostrand   is located just steps from Triangle Junction, a bustling hub that offers familiar names like Target, Starbucks, and other dining staples. When you're looking to venture away from the norm, nearby ethnic eateries, coffee shops, and lounges allow you to step off the beaten path and into established, locals-only hotspots.",
         image : twoColImage1,
         flexDirection : "row",
         price: ""
@@ -34,7 +44,7 @@ let TwoColumnData = [
         variant : "white",
         heading : "Parks & Greenspaces",
         subheading : "",
-        description : "Enjoying the great outdoors is easy in Flatbush. 2339 Nostrand Ave is located just a few blocks from Amersfort Park, one of the most peaceful greenspaces in New York City. Filled with beautiful cherry blossoms in the spring, old trees, and rolling hills, it is a great place to gather. Nearby, Brooklyn College's picturesque campus is another exciting feature of this section of the city.",
+        description : "Enjoying the great outdoors is easy in Flatbush. 2339 Nostrand is located just a few blocks from Amersfort Park, one of the most peaceful greenspaces in New York City. Filled with beautiful cherry blossoms in the spring, old trees, and rolling hills, it is a great place to gather. Nearby, Brooklyn College's picturesque campus is another exciting feature of this section of the city.",
         image : twoColImage2,
         flexDirection : "row-reverse",
         price: ""
@@ -52,7 +62,7 @@ let TwoColumnData = [
         variant : "white",
         heading : "Public Transportation",
         subheading : "",
-        description : "Enjoying the great outdoors is easy in Flatbush. 2339 Nostrand Ave is located just a few blocks from Amersfort Park, one of the most peaceful greenspaces in New York City. Filled with beautiful cherry blossoms in the spring, old trees, and rolling hills, it is a great place to gather. Nearby, Brooklyn College's picturesque campus is another exciting feature of this section of the city.",
+        description : "2339 Nostrand is located near two major subway lines – the 2 Train (7 Av Express) and the 5 Train (Lexington Av Express) – as well as multiple bus lines. It doesn’t matter if you’re headed to another part of the borough or another part of the city – you’ll be able to get there with ease",
         image : twoColImage4,
         flexDirection : "row-reverse",
         price: ""
@@ -124,7 +134,7 @@ let MaplegendData = [
               coords : [-73.94704, 40.62904]
           },
           {
-              place : "Dallas BBQ Nostrand Ave",
+              place : "Dallas BBQ Nostrand  ",
               coords : [-73.947832, 40.632557]
           },
           {
@@ -189,6 +199,7 @@ export default function Home() {
       }
       <MapContainer title={poiTitle} coords={poi} showPopup={showPopup} flyData={flyData} setFlyData={setFlyData}/>
       <MapLegend data={MaplegendData} setPoi={setPoi} setFlyData={setFlyData} flyData={flyData} setPoiTitle={setPoiTitle} setShowPopup={setShowPopup}/>
+      <QuickNav data={NavData}/>
     </>
   );
 }

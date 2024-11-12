@@ -1,24 +1,24 @@
 import headerLogo from '../assets/images/Headerlogo.svg';
 import { useEffect, useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 
 const links = [
   [
     {
-      link : "/",
+      link : "/#root",
       linkText : "Home",
-      type: "link"
+      type: "hash"
     },
     {
-      link : "/residences",
+      link : "/residences#root",
       linkText : "Residences",
-      type: "link"
+      type: "hash"
     },
     {
-      link : "/amenities",
+      link : "/amenities#root",
       linkText : "Amenities",
-      type: "link"
+      type: "hash"
     }
   ],
   [
@@ -29,36 +29,36 @@ const links = [
   ],
   [
     {
-      link : "/availabilities",
+      link : "/availabilities#root",
       linkText : "Availabilities",
-      type: "link"
+      type: "hash"
     },
     {
-      link : "/neighborhood",
+      link : "/neighborhood#root",
       linkText : "Neighborhood",
-      type: "link"
+      type: "hash"
     },
     {
-      link : "/contact#form",
+      link : "/contact#root",
       linkText : "Contact",
       type: "hash"
     }
   ]
 ];
 const Header = () => {
-  const [headerToggle, setHeaderToggle] = useState('false');
+  const [headerToggle, setHeaderToggle] = useState(false);
   const [headerClasses, setHeaderClasses] = useState([])
   
   const reload = () => {
     setHeaderClasses(headerClasses.filter(className => className !== 'close'));
   }
   const handleToggle = ()=>{
-    setHeaderToggle(headerToggle?false:true)
     if(headerToggle){
       setHeaderClasses(headerClasses.filter(className => className !== 'close'));
     }else{
       setHeaderClasses([...headerClasses, 'close']);
     }
+    setHeaderToggle(!headerToggle)
   }
   useEffect(() => {
     const handleScroll = () => {
@@ -127,18 +127,20 @@ const Header = () => {
             })
           }
         </div>
+        <div className="inquire">
+          <HashLink class='link' to='/contact#root' smooth>
+            Contact
+          </HashLink>
+        </div>
         <div className="logo-wrap">
-          <Link to="/">
+          <HashLink to="/#root" smooth>
             <img className="logo" src={headerLogo} alt=""/>
-          </Link>
+          </HashLink>
         </div>
         <div className="menu-button" onClick={handleToggle}>
-          <div className="menu-icon">
-            <span></span>
-            <span></span>
-          </div>
           <span>Menu</span>
         </div>
+        
       </div>
   </header>
   )

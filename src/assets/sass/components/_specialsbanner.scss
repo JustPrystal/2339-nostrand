@@ -1,0 +1,89 @@
+.specials{
+    position: fixed;
+    width: 25%;
+    padding: 50px 0;
+    display: flex;
+    background-color: #637697;
+    border: 2px solid white;
+    border-right: 0;
+    top: 50%;
+    //right: -25%;
+    right: -25%;
+    transition: right 1s ease;
+    z-index: 9999;
+    transform: translateY(-50%);
+    border-bottom-left-radius: 16px;
+    border-top-left-radius: 16px;
+    @include responsive(xl) {
+        width: 35%;
+        right: -35%
+    }
+    @include responsive(sm){
+        width: 50%;
+        right: -50%;
+    }
+    
+    @include responsive(xs){
+        width: 65%;
+        right: -65%;
+    }
+    
+    &.open{
+        right: 0;
+
+    }
+    
+    .view-offer{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%) rotate(-90deg);
+        background-color: #637697;
+        border: 2px solid white;
+        border-bottom: none;
+        color: white;
+        left: -77px;
+        padding: 15px 10px;
+        text-transform: uppercase;
+        font-family: "cako";
+        font-weight: 800;
+        p{
+            display: inline-block;
+        }
+        cursor: pointer;
+    }
+    .special-banner{
+        padding: 25px;
+        text-align: center;
+        position: relative;
+        @include responsive (xs){
+            padding: 10px;
+        }
+        img{
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            top: -30px;
+            right: 15px;
+        }
+        .text-wrap{
+
+            .offer-text{
+                font-family: "cako";
+                color: white;
+                margin-bottom: 25px;
+                @include responsive (xs){
+                    font-size: 20px;
+                }
+            }
+            .contact{
+                color: white;
+                padding: 10px 5px;
+                font-family: "Super Gothic";
+                transition: all ease 0.3s;
+                &:hover{
+                    color: #feeddc;
+                }
+            }
+        }
+    }
+}

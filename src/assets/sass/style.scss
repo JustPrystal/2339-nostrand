@@ -6,12 +6,16 @@
 
 // components go here
 
-@import 'header';
-@import 'footer';
-@import 'banner';
-@import 'two-column';
-@import 'table';
-@import 'modal';
-@import 'form';
-@import 'map';
-@import 'maplegend';
+@import 'components/header';
+@import 'components/footer';
+@import 'components/banner';
+@import 'components/two-column';
+@import 'components/table';
+@import 'components/modal';
+@import 'components/form';
+@import 'components/map';
+@import 'components/maplegend';
+@import 'components/specialsbanner';
+@import 'components/3dTour';
+@import 'components/quicknav';
+@import 'components/parrallaxBanner';
