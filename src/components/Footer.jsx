@@ -45,8 +45,8 @@ export default function Footer() {
                 <div className="inner">
                     <div className="origin-and-address">
                         <div className="logos-wrap">
-                            <div className="exr-logo logo" aria-label="Visit EXR Website">
-                                <a href="https://www.exrny.com/?utm_source=+http%3A%2F%2F150bk.com&utm_medium=referral+&utm_campaign=landing_pages"><img src={EXRLogo} alt="" /></a>
+                            <div className="exr-logo logo">
+                                <a href="https://www.exrny.com/?utm_source=+http%3A%2F%2F150bk.com&utm_medium=referral+&utm_campaign=landing_pages"  aria-label="Visit EXR Website"><img src={EXRLogo} alt="" /></a>
                             </div>
                             <div className="house-logo logo">
                                 <img src={fairHousingLogo} alt="" />

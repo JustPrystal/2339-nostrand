@@ -137,7 +137,7 @@ const Header = () => {
         </div>
         <div className="logo-wrap">
           <HashLink to="/#root" smooth>
-            <img className="logo" src={headerLogo} alt=""/>
+            <img className="logo" src={headerLogo} aria-label="Return to Homepage" alt=""/>
           </HashLink>
         </div>
         <div className="menu-button" onClick={handleToggle}>
