@@ -6,7 +6,7 @@ import MapPopup from './MapPopup';
 const MapContainer = ({coords, showPopup, title, flyData, setFlyData}) => {
 
   const mapRef = useRef(null);
-  
+
   const [viewport] = useState({
     longitude: -73.9467281,
     latitude: 40.6276299,
@@ -35,7 +35,9 @@ const MapContainer = ({coords, showPopup, title, flyData, setFlyData}) => {
     }
   }, [flyData.condition, fly, resetFly]);
   
-  return ( 
+  return (
+    <>
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v3.1.0/mapbox-gl.js"></script>
       <section class="map" id="map">
         <Map
           ref={mapRef}
@@ -53,6 +55,7 @@ const MapContainer = ({coords, showPopup, title, flyData, setFlyData}) => {
           }
         </Map>
       </section>
+    </>
   );
   
 }
