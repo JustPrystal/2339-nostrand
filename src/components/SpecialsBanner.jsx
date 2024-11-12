@@ -26,9 +26,9 @@ export default function SpecialsBanner() {
             <div className="special-banner">
                 <img src={closeSvg} alt="" onClick={() => openMenu()}/>
                 <div className="text-wrap">
-                    <h1 className="offer-text">
+                    <h2 className="offer-text">
                         LIMITED TIME OFFER: UP TO 2.5 MONTHS FREE!*
-                    </h1>
+                    </h2>
                     <HashLink className="contact" smooth to="/contact#form">
                         *Restrictions apply, Contact for Details
                     </HashLink>

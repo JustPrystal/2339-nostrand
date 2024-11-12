@@ -37,6 +37,7 @@ let TwoColumnData = [
         subheading : "",
         description : "2339 Nostrand   is located just steps from Triangle Junction, a bustling hub that offers familiar names like Target, Starbucks, and other dining staples. When you're looking to venture away from the norm, nearby ethnic eateries, coffee shops, and lounges allow you to step off the beaten path and into established, locals-only hotspots.",
         image : twoColImage1,
+        imageDesc: "Images of a cozy café with hanging guitars and a lively restaurant scene, depicting the vibrant dining and nightlife options available in the area.",
         flexDirection : "row",
         price: ""
     },
@@ -46,6 +47,7 @@ let TwoColumnData = [
         subheading : "",
         description : "Enjoying the great outdoors is easy in Flatbush. 2339 Nostrand is located just a few blocks from Amersfort Park, one of the most peaceful greenspaces in New York City. Filled with beautiful cherry blossoms in the spring, old trees, and rolling hills, it is a great place to gather. Nearby, Brooklyn College's picturesque campus is another exciting feature of this section of the city.",
         image : twoColImage2,
+        imageDesc: "Photos of a park with lush trees and a small waterfall, highlighting peaceful green areas and natural beauty for relaxation and outdoor activities.",
         flexDirection : "row-reverse",
         price: ""
     },
@@ -55,6 +57,7 @@ let TwoColumnData = [
         subheading : "",
         description : "Located just one block from Brooklyn College, life here will expand your horizons. An area of New York City that once housed a range of immigrant families, the 'melting pot' mentality remains alive and well in this diverse, dynamic cultural center. With a myriad of volunteer organizations committed to keeping Flatbush beautiful, this neighborhood keeps getting better and better.",
         image : twoColImage3,
+        imageDesc: "Images of colorful street art, a historic theater, and architectural landmarks, showcasing the area's rich cultural and artistic environment.",
         flexDirection : "row",
         price: ""
     },
@@ -64,6 +67,7 @@ let TwoColumnData = [
         subheading : "",
         description : "2339 Nostrand is located near two major subway lines – the 2 Train (7 Av Express) and the 5 Train (Lexington Av Express) – as well as multiple bus lines. It doesn’t matter if you’re headed to another part of the borough or another part of the city – you’ll be able to get there with ease",
         image : twoColImage4,
+        imageDesc: "Photos of a bus and a historic theater building, emphasizing accessibility and easy public transit options within the city.",
         flexDirection : "row-reverse",
         price: ""
     },

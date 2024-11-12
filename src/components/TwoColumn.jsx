@@ -9,6 +9,7 @@ const TwoColumn = ({data}) => {
         heading,
         description,
         image,
+        imageDesc,
         flexDirection,
         price,
         cta,
@@ -43,7 +44,7 @@ const TwoColumn = ({data}) => {
                         }
                     </div>
                     <div class="image-wrap">
-                        <img src={image} alt="" className="image" />
+                        <img src={image} alt={imageDesc} className="image" />
                     </div>
                 </div>
             </div>

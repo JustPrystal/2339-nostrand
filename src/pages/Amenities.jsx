@@ -37,6 +37,7 @@ let TwoColumnData = [
         subheading: "",
         description: "Every time you enter, you'll be greeted by the building's chic lobby, filled with contemporary design elements and modern furnishings.",
         image: twoColImage8,
+        imageDesc: 'A stylish and modern lobby area with comfortable seating, elegant lighting, and large windows allowing natural light to fill the space.',
         flexDirection: "row",
     },
     {
@@ -45,6 +46,7 @@ let TwoColumnData = [
         subheading: "",
         description: "Our 7th-floor rooftop terrace offers stunning city views and features grills, perfect for outdoor dining and entertaining. Enjoy a peaceful escape with panoramic views of the neighborhood.",
         image: twoColImage7,
+        imageDesc: 'A spacious rooftop terrace with seating and tables, offering a panoramic view of the city skyline under a clear blue sky.',
         flexDirection: "row-reverse",
     },
     {
@@ -53,6 +55,7 @@ let TwoColumnData = [
         subheading: "",
         description: "Anyone with a modern or hybrid work schedule will appreciate the on-site Co-Working Space, which allows you to separate where you work from where you live.",
         image: twoColImage5,
+        imageDesc: 'A collaborative workspace featuring large tables, comfortable chairs, and natural lighting, designed for productivity and community.',
         flexDirection: "row",
     },
     {
@@ -61,6 +64,7 @@ let TwoColumnData = [
         subheading: "",
         description: "The Zen Garden on the ground level provides a tranquil retreat with lush greenery, offering a serene space for relaxation. Immerse yourself in a calming, Zen-inspired atmosphere right at home.",
         image: twoColImage6,
+        imageDesc: 'A peaceful garden space with lush greenery, cozy outdoor seating, and a tranquil atmosphere for relaxation.',
         flexDirection: "row-reverse",
     },
     {
@@ -69,6 +73,7 @@ let TwoColumnData = [
         subheading: "",
         description: "Step up your fitness without an expensive gym membership by using the building's state-of-the-art fitness center, equipped with modern cardio machines, free weights, and more.",
         image: twoColImage1,
+        imageDesc: 'A well-equipped fitness center with a variety of exercise machines and weights, designed for residents’ health and wellness.',
         flexDirection: "row",
     },
     {
@@ -77,6 +82,7 @@ let TwoColumnData = [
         subheading: "",
         description: "Coming home at the end of a long day just got easier. Covered parking makes street parking a thing of the past.",
         image: twoColImage2,
+        imageDesc: 'An indoor parking area with secure, designated parking spaces for residents.',
         flexDirection: "row-reverse",
     },
     {
@@ -85,6 +91,7 @@ let TwoColumnData = [
         subheading: "",
         description: "On-site laundry facilities make it easy to incorporate laundry into your routine.",
         image: twoColImage4,
+        imageDesc: 'A clean and organized laundry room with multiple washers and dryers, providing convenient laundry facilities.',
         flexDirection: "row",
     },
     {
@@ -93,6 +100,7 @@ let TwoColumnData = [
         subheading: "",
         description: "A designated bike storage area allows you to safely secure your bicycle when not in use.",
         image: twoColImage3,
+        imageDesc: 'A designated bike storage area with multiple bicycles securely mounted on wall racks above storage cabinets, providing a safe and organized space for residents to store their bikes.',
         flexDirection: "row-reverse",
     },
     // {
