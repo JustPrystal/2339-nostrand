@@ -1,4 +1,3 @@
-
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Amenities from "./pages/Amenities";
@@ -7,8 +6,8 @@ import Neighborhood from "./pages/Neighborhood";
 import Availabilities from "./pages/Availabilities";
 import GlobalLayout from "./layout";
 import ErrorPage from "./pages/ErrorPage";
+import RedirectTrailingSlash from "./RedirectTrailingSlash"; // Import the new component
 import { createBrowserRouter } from "react-router-dom";
-
 
 const routes = [
     {
@@ -35,18 +34,20 @@ const routes = [
         path: "/availabilities",
         element: <Availabilities />,
     }
-]
+];
 
 const router = createBrowserRouter([
     {
         path: "/",
         element: <GlobalLayout />,
         errorElement: <ErrorPage />,
-        children: routes 
+        children: [
+            {
+                element: <RedirectTrailingSlash />, 
+                children: routes,
+            },
+        ],
     },
-   
 ]);
 
-
 export default router;
-

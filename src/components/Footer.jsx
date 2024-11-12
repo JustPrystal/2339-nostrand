@@ -23,7 +23,7 @@ export default function Footer() {
             <h2>The Civil Rights Act of 1968</h2>
             <p>The Civil Rights Act of 1968 known as the Federal Fair Housing Law makes illegal any discrimination based on race, color, religion, sex or national origin in connection with the sale or rental of housing. The 1988 amendment to this Act (The Fair Housing Amendments Act of 1988) expands the coverage of this law to handicapped persons and families with children. EXR complies fully with State and local statutes and Federal Fair Housing laws.</p>
             <h2>Links</h2>
-            <p>For more information, visit these websites:<br><a target="_blank" href="http://www.dhr.ny.gov/">http://www.dhr.ny.gov</a><br><a target="_blank" href="http://www.nyc.gov/html/cchr/">http://www.nyc.gov/html/cchr/</a><br><a target="_blank" href="http://portal.hud.gov/">http://portal.hud.gov</a></p>`
+            <p>For more information, visit these websites:<br><a target="_blank" href="https://www.dhr.ny.gov/">https://www.dhr.ny.gov</a><br><a target="_blank" href="https://www.nyc.gov/html/cchr/">https://www.nyc.gov/html/cchr/</a><br><a target="_blank" href="http://portal.hud.gov/">http://portal.hud.gov</a></p>`
         },
         {
             slug: "accessibility",
@@ -56,7 +56,7 @@ export default function Footer() {
                     </div>
                     <div className="logo-and-copyright">
                         <Link onClick={scrollUp} to="/" alt="footer logo" aria-label="Return to Homepage" >
-                            <svg width="300" length="auto" viewBox="0 0 300 422" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="300" length="auto" viewBox="0 0 300 422" fill="none" xmlns="https://www.w3.org/2000/svg">
                                 <path d="M7.20008 386.699L7.26008 408.679C7.26008 413.579 8.78008 417.309 10.8801 420.519H3.07008C5.23008 417.259 6.69008 413.579 6.69008 408.679L6.63008 385.939L2.08008 379.699H12.2201L32.4001 406.759L32.4601 391.539C32.4601 386.639 31.0001 382.969 28.8401 379.699H36.6501C34.5501 382.909 33.0301 386.639 33.0301 391.539L32.9701 421.459H32.6801L7.20008 386.699Z" fill="white" />
                                 <path d="M38.6992 400.11C38.6992 387.52 49.1992 378.77 60.0992 378.77C72.7492 378.77 81.3792 389.32 81.3792 400.17C81.3792 412.71 71.2892 421.46 60.4992 421.46C47.5092 421.46 38.6992 411.08 38.6992 400.11ZM64.3592 420.23C70.1292 420.23 72.6392 413.7 72.6392 407.46C72.6392 397.14 65.5892 380.05 55.7292 380.05C49.9592 380.05 47.4492 386.46 47.4492 392.82C47.4492 402.74 54.4492 420.23 64.3592 420.23Z" fill="white" />
                                 <path d="M83.4995 418.89L83.4395 404.31L83.6095 404.37C86.4695 411.89 91.9495 420.35 100.229 420.7C103.089 420.76 106.989 419.48 106.989 414.87C106.989 410.96 104.129 408.86 96.8494 405.42C88.9194 401.57 83.5495 397.84 83.5495 390.78C83.5495 382.27 90.4295 378.77 97.4295 378.77C103.259 378.77 108.569 380.7 109.969 381.22V395.86H109.799C108.519 389.85 102.679 379.59 95.2794 379.59C91.3694 379.59 89.1595 381.98 89.1595 385.42C89.1595 391.54 95.9195 393.47 101.749 396.38C111.079 400.93 113.529 404.72 113.529 409.97C113.529 418.48 106.179 421.46 98.3695 421.46C91.9595 421.46 86.6495 419.88 83.4995 418.89Z" fill="white" />
