@@ -8,7 +8,7 @@ export default function QuickNav({data}) {
                     <div className="prev">
                         <HashLink to={data.prevlink.prev} smooth>
                             {data.prevlink.text}
-                            <img className="arrow rotated"  src={arrowSvg}/>
+                            <img className="arrow rotated" alt=""  src={arrowSvg}/>
                         </HashLink>
                     </div>
 
@@ -20,7 +20,7 @@ export default function QuickNav({data}) {
                     <div className="next">
                         <HashLink to={data.nextlink.next} smooth>
                             {data.nextlink.text}
-                            <img className="arrow" src={arrowSvg}/>
+                            <img className="arrow" alt="" src={arrowSvg}/>
                         </HashLink>
                     </div>
                 </div>

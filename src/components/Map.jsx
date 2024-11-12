@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import Map, {Marker} from 'react-map-gl';
 import mapLogo from '../assets/images/mapLogo.png';
 import MapPopup from './MapPopup';
@@ -6,28 +6,34 @@ import MapPopup from './MapPopup';
 const MapContainer = ({coords, showPopup, title, flyData, setFlyData}) => {
 
   const mapRef = useRef(null);
-
+  
   const [viewport] = useState({
     longitude: -73.9467281,
     latitude: 40.6276299,
     zoom: 14,
-  })
-  const resetFly = ()=>{
-    setFlyData({
-      ...flyData,
-      condition : false,
-    })
-  }
-  const fly = () => {
-    mapRef.current?.flyTo({center: [coords[0], coords[1]], duration: 2000, zoom:16});
-  };
+  });
+
+  const resetFly = useCallback(() => {
+    setFlyData((prevFlyData) => ({
+      ...prevFlyData,
+      condition: false,
+    }));
+  }, [setFlyData]);
+
+  const fly = useCallback(() => {
+    mapRef.current?.flyTo({
+      center: [coords[0], coords[1]],
+      duration: 2000,
+      zoom: 16,
+    });
+  }, [coords]);
 
   useEffect(() => {
-    if(flyData.condition){
-      fly()
-      resetFly()
+    if (flyData.condition) {
+      fly();
+      resetFly();
     }
-  }, [flyData.condition])
+  }, [flyData.condition, fly, resetFly]);
   
   return ( 
       <section class="map" id="map">
