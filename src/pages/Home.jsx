@@ -36,7 +36,7 @@ let TwoColumnData = [
       flexDirection : "row",
       price: "",
       cta: "/residences",
-      ctaType: "residences"
+      label: "Learn more about residences"
   },
   {
       variant : "blue",
@@ -48,7 +48,7 @@ let TwoColumnData = [
       flexDirection : "row-reverse",
       price: "",
       cta: "/amenities",
-      ctaType: "amenities"
+      label: "Learn more about amenities"
   },
   {
       variant : "white",
@@ -60,7 +60,7 @@ let TwoColumnData = [
       flexDirection : "row",
       price: "",
       cta: "/neighborhood",
-      ctaType: "the neighborhood"
+      label: "Learn more about the neighborhood"
   },
 ]
 export default function Home() {

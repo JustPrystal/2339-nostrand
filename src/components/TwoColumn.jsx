@@ -13,7 +13,7 @@ const TwoColumn = ({data}) => {
         flexDirection,
         price,
         cta,
-        ctaType,
+        label,
     } = data;
     return (
         <>
@@ -38,7 +38,7 @@ const TwoColumn = ({data}) => {
                         }
                         {
                              
-                             cta && <Link class="cta" to={cta} onClick={scrollUp} aria-label={`Learn more about ${ctaType}`}>
+                             cta && <Link class="cta" to={cta} onClick={scrollUp} aria-label={label}>
                                 Learn More
                             </Link>
                         }
