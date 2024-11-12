@@ -34,7 +34,8 @@ let TwoColumnData = [
       image : twoColImage2,
       flexDirection : "row",
       price: "",
-      cta: "/residences"
+      cta: "/residences",
+      ctaType: "Residences"
   },
   {
       variant : "blue",
@@ -44,7 +45,8 @@ let TwoColumnData = [
       image : twoColImage1,
       flexDirection : "row-reverse",
       price: "",
-      cta: "/amenities"
+      cta: "/amenities",
+      ctaType: "Amenities"
   },
   {
       variant : "white",
@@ -54,7 +56,8 @@ let TwoColumnData = [
       image : twoColImage3,
       flexDirection : "row",
       price: "",
-      cta: "/neighborhood"
+      cta: "/neighborhood",
+      ctaType: "The Neighborhood"
   },
 ]
 export default function Home() {
