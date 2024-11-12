@@ -24,7 +24,8 @@ const links = [
   [
     {
       link : "/",
-      linkImage : headerLogo
+      linkImage : headerLogo,
+      aria: "Return to Homepage"
     }
   ],
   [
@@ -93,7 +94,9 @@ const Header = () => {
                         return(
                           <NavLink 
                             to={link.link} 
-                            key={childIndex}>
+                            key={childIndex}
+                            aria-label={link.aria}
+                            >
                             <img src={link.linkImage} alt="logo" />
                           </NavLink>
                         )

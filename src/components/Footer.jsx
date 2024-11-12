@@ -45,7 +45,7 @@ export default function Footer() {
                 <div className="inner">
                     <div className="origin-and-address">
                         <div className="logos-wrap">
-                            <div className="exr-logo logo">
+                            <div className="exr-logo logo" aria-label="Visit EXR Website">
                                 <a href="https://www.exrny.com/?utm_source=+http%3A%2F%2F150bk.com&utm_medium=referral+&utm_campaign=landing_pages"><img src={EXRLogo} alt="" /></a>
                             </div>
                             <div className="house-logo logo">
@@ -55,7 +55,7 @@ export default function Footer() {
                         <AddressComponent className="address desktop-address" />
                     </div>
                     <div className="logo-and-copyright">
-                        <Link onClick={scrollUp} to="/" alt="footer logo" >
+                        <Link onClick={scrollUp} to="/" alt="footer logo" aria-label="Return to Homepage" >
                             <svg width="300" height="auto" viewBox="0 0 300 422" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M7.20008 386.699L7.26008 408.679C7.26008 413.579 8.78008 417.309 10.8801 420.519H3.07008C5.23008 417.259 6.69008 413.579 6.69008 408.679L6.63008 385.939L2.08008 379.699H12.2201L32.4001 406.759L32.4601 391.539C32.4601 386.639 31.0001 382.969 28.8401 379.699H36.6501C34.5501 382.909 33.0301 386.639 33.0301 391.539L32.9701 421.459H32.6801L7.20008 386.699Z" fill="white" />
                                 <path d="M38.6992 400.11C38.6992 387.52 49.1992 378.77 60.0992 378.77C72.7492 378.77 81.3792 389.32 81.3792 400.17C81.3792 412.71 71.2892 421.46 60.4992 421.46C47.5092 421.46 38.6992 411.08 38.6992 400.11ZM64.3592 420.23C70.1292 420.23 72.6392 413.7 72.6392 407.46C72.6392 397.14 65.5892 380.05 55.7292 380.05C49.9592 380.05 47.4492 386.46 47.4492 392.82C47.4492 402.74 54.4492 420.23 64.3592 420.23Z" fill="white" />
