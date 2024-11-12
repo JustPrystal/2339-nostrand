@@ -7,9 +7,6 @@
         object-fit: cover;
         z-index: -1;
         max-height: 900px;
-        @include responsive(sm){
-            max-height: 500px;
-        }
     }
     .text-wrap{
         background-color: #637698;
