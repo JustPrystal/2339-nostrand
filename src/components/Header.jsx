@@ -95,7 +95,7 @@ const Header = () => {
                           <NavLink 
                             to={link.link} 
                             key={childIndex}
-                            aria-label={link.aria}
+                            aria-label="Go to homepage"
                             >
                             <img src={link.linkImage} alt="logo" />
                           </NavLink>
