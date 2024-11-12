@@ -23,7 +23,7 @@ const links = [
   ],
   [
     {
-      link : "/",
+      link : "/#root",
       linkImage : headerLogo,
       aria: "Return to Homepage"
     }
@@ -92,13 +92,13 @@ const Header = () => {
                     linkGroup.map((link,childIndex)=>{
                       if (link.linkImage) {
                         return(
-                          <NavLink 
+                          <HashLink 
                             to={link.link} 
                             key={childIndex}
                             aria-label="Go to homepage"
                             >
                             <img src={link.linkImage} alt="logo" />
-                          </NavLink>
+                          </HashLink>
                         )
                       } 
                       else {
