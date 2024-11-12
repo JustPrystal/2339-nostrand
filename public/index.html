@@ -2,36 +2,13 @@
 <html lang="en">
 
 <head>
-  
+
   <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v3.1.0/mapbox-gl.js"></script>
   <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v3.1.0/mapbox-gl.css" rel="stylesheet" />
-  <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-5MMWSFD6');</script>
-  <!-- End Google Tag Manager -->
+
 
   <!-- Meta Pixel Code -->
-  <script>
-    !function (f, b, e, v, n, t, s) {
-      if (f.fbq) return; n = f.fbq = function () {
-        n.callMethod ?
-        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-      };
-      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
-      n.queue = []; t = b.createElement(e); t.async = !0;
-      t.src = v; s = b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t, s)
-    }(window, document, 'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1147617253105228');
-    fbq('track', 'PageView');
-  </script>
+  
   <noscript><img height="1" width="1" style="display:none"
       src="https://www.facebook.com/tr?id=1147617253105228&ev=PageView&noscript=1" /></noscript>
   <!-- End Meta Pixel Code -->
@@ -40,7 +17,8 @@
   <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#000000" />
-  <meta name="description" content="2339 Nostrand Avenue offers luxury apartments in historic Flatbush, one of Brooklyn’s most sought after neighborhoods." />
+  <meta name="description"
+    content="2339 Nostrand Avenue offers luxury apartments in historic Flatbush, one of Brooklyn’s most sought after neighborhoods." />
   <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
   <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -76,6 +54,58 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+  <!-- Google Tag Manager -->
+  <script>
+    var interaction = false;
+    function runOnInteraction() {
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+          'gtm.start':
+            new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-5MMWSFD6');
+    }
+    if (interaction === false) {
+      document.addEventListener('click', function () {
+        if (!interaction) {
+          interaction = true;
+          runOnInteraction();
+        }
+      });
+
+      document.addEventListener('scroll', function () {
+        if (!interaction) {
+          interaction = true;
+          runOnInteraction();
+        }
+      });
+
+      document.addEventListener('keydown', function () {
+        if (!interaction) {
+          interaction = true;
+          runOnInteraction();
+        }
+      });
+    }
+  </script>
+  <!-- End Google Tag Manager -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1147617253105228');
+    fbq('track', 'PageView');
+  </script>
 </body>
 
 </html>
