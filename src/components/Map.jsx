@@ -37,6 +37,7 @@ const MapContainer = ({coords, showPopup, title, flyData, setFlyData}) => {
   
   return (
     <>
+    <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v3.1.0/mapbox-gl.css" rel="stylesheet" />
     <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v3.1.0/mapbox-gl.js"></script>
       <section class="map" id="map">
         <Map
