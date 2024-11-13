@@ -6,7 +6,7 @@ import Neighborhood from "./pages/Neighborhood";
 import Availabilities from "./pages/Availabilities";
 import GlobalLayout from "./layout";
 import ErrorPage from "./pages/ErrorPage";
-import RedirectTrailingSlash from "./RedirectTrailingSlash"; // Import the new component
+import RedirectTrailingSlash from "./RedirectTrailingSlash"; 
 import { createBrowserRouter } from "react-router-dom";
 
 const routes = [
